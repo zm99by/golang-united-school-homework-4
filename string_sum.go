@@ -7,7 +7,8 @@ import (
 //use these errors as appropriate, wrapping them with fmt.Errorf function
 var (
 	// Use when the input is empty, and input is considered empty if the string contains only whitespace
-	errorEmptyInput     = errors.New("input is empty")
+	errorEmptyInput = errors.New("input is empty")
+	// Use when the expression has number of operands not equal to two
 	errorNotTwoOperands = errors.New("expecting two operands, but received more or less")
 )
 
